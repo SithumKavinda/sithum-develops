@@ -5,19 +5,43 @@
   justify-content: center;
   width: 100vw;
   height: fit-content;
-  padding-top: 40px;
-}
-
-.main-container .text-area {
-  padding-bottom: 20px;
 }
 
 .main-container .text-area h1 {
-  font-family: "Dancing Script", cursive;
   font-size: 3rem;
   text-align: center;
+  padding-top: 5rem;
 }
 
 .main-container img {
-  width: 50vw;
+  width: fit-content;
+  height: fit-content;
+}
+
+.text-blur-out {
+  -webkit-animation: text-blur-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    infinite alternate-reverse both;
+  animation: text-blur-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite
+    alternate-reverse both;
+}
+
+@-webkit-keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
 }
