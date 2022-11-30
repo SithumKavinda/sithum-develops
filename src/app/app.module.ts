@@ -6,23 +6,16 @@ import { AppComponent } from './app.component';
 import { ComingsoonComponent } from './comingsoon/comingsoon.component';
 import { FooterComponent } from './footer/footer.component';
 
-// newly added modules
-import { CommonModule } from '@angular/common';
-import { LottieModule } from 'ngx-lottie';
-import player from 'lottie-web';
-
-export function playerFactory(): any {
-  return import('lottie-web');
-}
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, ComingsoonComponent, FooterComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    CommonModule,
-    LottieModule.forRoot({ player: playerFactory }),
+  declarations: [
+    AppComponent,
+    ComingsoonComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

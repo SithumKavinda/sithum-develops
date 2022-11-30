@@ -20,9 +20,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css"],
-            "scripts": [
-              "./node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
