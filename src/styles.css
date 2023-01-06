@@ -4,6 +4,7 @@
 * {
   /* border: 1px solid black; */
   font-family: "Poppins", sans-serif;
+  color: whitesmoke;
 }
 
 body {
@@ -12,4 +13,8 @@ body {
   overflow: hidden;
   padding: 0;
   margin: 0;
+  background-color: rgb(48, 48, 48);
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
